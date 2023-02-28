@@ -6,6 +6,21 @@
     <title>Martial Peak</title>
 </head>
 <body>
+    <h1>Martial Peak</h1>
     
+    <div id="book">
+        <div v-if="true">
+
+        <p>{{ mc }}</p> 
+        <p>{{ cultivationbase }}</p>
+        <button @click="cultivationbase = '1rst rank open heaven master'">upgrade cultivation base</button>
+        <p>{{ cultivation }} {{years}}</p>
+
+        <button v-on:click="cultivation++">increase cultivation years</button>&nbsp;
+        <button v-on:click="cultivation--">decrease cultivation years</button></br>
+        
+    </div>
+    </div>
+    <script src="app.js"></script>
 </body>
 </html>
